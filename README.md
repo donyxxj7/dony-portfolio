@@ -71,5 +71,5 @@ Um portfólio digital elegante para uma profissional autônoma, focado em exibir
 
 Estou sempre aberto a novas oportunidades e colaborações. Vamos conversar!
 
-* **Email:** `endonyparadela2007@gmail.com`
-* **LinkedIn:** `www.linkedin.com/in/endony-paradela-rodrigues-5770312ba`
+* [Instagram](https://www.instagram.com/donyy.xxj7/)
+* [Linkdin](https://www.linkedin.com/in/endony-paradela-rodrigues-5770312ba/)
