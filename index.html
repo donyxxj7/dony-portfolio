@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Dony, um desenvolvedor web iniciante apaixonado por criar soluções criativas e funcionais com HTML, CSS e JavaScript.">
+    <title>Dony | Dev Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Dony</div>
+            <ul id="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <button id="menu-btn" class="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Olá, eu sou o <span id="typing-effect"></span>!</h1>
+                <a href="#projetos" class="btn">Ver Projetos</a>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h2>Olá, sou o Dony</h2>
+            <div class="sobre-content">
+                <p>
+<h3> Tenho 17 anos e sou apaixonado por tecnologia e inovação. Atualmente, estou focado no aprendizado de HTML, CSS e JavaScript, com o objetivo de desenvolver interfaces web modernas, criativas e funcionais. Acredito no poder da prática e estou sempre buscando novos desafios que me permitam aplicar meus conhecimentos e crescer como desenvolvedor.
+    <tr>Meu objetivo é evoluir constantemente, aprendendo com cada projeto e contribuindo ativamente em soluções reais que impactem positivamente as pessoas. Estou aberto a colaborações, mentorias e oportunidades que me ajudem a construir uma carreira sólida no desenvolvimento web.</tr></h3>
+                </p>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <h2>Meus Projetos</h2>
+
+            <div class="case-study">
+                <div class="case-study-image">
+                    <img src="assets/image.png" alt="Página inicial do site para manicure Ana Bagdzinski">
+                </div>
+                <div class="case-study-content">
+                    <h3>Site Vitrine: Portfólio para Manicure</h3>
+                    <p class="project-tagline">Um site completo para uma profissional autônoma exibir seus trabalhos, serviços e captar clientes.</p>
+                    <h4>O Desafio</h4>
+
+                    <p>Desenvolver um portfólio digital elegante e funcional que servisse como um cartão de visitas online, com galeria de fotos, tabela de preços, e formulários para agendamento e indicação de amigas.</p>
+                    <div class="project-links">
+                        <a href="https://bagdzunhas.store/" target="_blank" rel="noopener noreferrer" class="btn">
+                            <i class="fas fa-external-link-alt"></i> Visitar o Site
+                        </a>
+                        <a href="https://github.com/donyxxj7/bagdzunhas-projeto" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                            <i class="fab fa-github"></i> Ver o Código
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="margin: 2.5rem auto; border: none; border-top: 1px solid #eee; max-width: 80%;">
+
+            <div class="case-study">
+                <div class="case-study-image">
+                    <img src="assets/Cine-Info ScreenShot.png" alt="Página inicial do projeto Cine-Info">
+                </div>
+                <div class="case-study-content">
+                    <h3>Cine-Info: Buscador de Filmes</h3>
+                    <p class="project-tagline">Uma aplicação web interativa que consome a API do TMDB para pesquisar e exibir detalhes de filmes.</p>
+                     <h4>Destaques do Projeto</h4>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> <strong> excelentes (90+) </strong> em auditorias do Lighthouse, incluindo 100 em Acessibilidade.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong> Desing responsivo </strong> com funcionalidades de busca, paginação e feedback de usuário.</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://dashing-kataifi-8b89dc.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn">
+                            <i class="fas fa-external-link-alt"></i> Visitar o Site
+                        </a>
+                        <a href="https://github.com/donyxxj7/cine-info" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                            <i class="fab fa-github"></i> Ver o Código
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="habilidades">
+            <h2>Minhas Habilidades</h2>
+            <div class="habilidades-grid">
+                <div class="habilidade-card animated-card"><i class="fab fa-html5"></i> HTML5</div>
+                <div class="habilidade-card animated-card"><i class="fab fa-css3-alt"></i> CSS3</div>
+                <div class="habilidade-card animated-card"><i class="fab fa-js-square"></i> JavaScript</div>
+            </div>
+        </section>
+
+        <section id="contato" class="contato">
+            <h2>Contato</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">Tem alguma pergunta ou proposta? Me envie uma mensagem!</p>
+            <form id="contact-form" action="https://formspree.io/f/mdkzeavw" method="POST">
+                <input type="text" name="name" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu Email" required>
+                <textarea name="message" rows="6" placeholder="Sua Mensagem" required></textarea>
+                <button type="submit" class="btn">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Feito com ❤️ por Dony | © 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
