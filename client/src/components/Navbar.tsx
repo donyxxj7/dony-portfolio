@@ -41,13 +41,14 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <a
             href="#"
-            className="text-2xl font-bold gradient-text"
+            className="flex items-center gap-3"
             onClick={(e) => {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
           >
-            Dony
+            <img src="/logo.png" alt="Dony Logo" className="h-10 w-10" />
+            <span className="text-2xl font-bold gradient-text">Dony</span>
           </a>
 
           {/* Desktop Navigation */}
