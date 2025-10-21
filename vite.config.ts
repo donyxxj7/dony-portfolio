@@ -1,21 +1,22 @@
-// Cole este código final em: vite.config.ts
+// Cole este código final e simplificado em: vite.config.ts
 
 import react from "@vitejs/plugin-react";
 import path from "path";
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  plugins: [react()], // Apenas o plugin do React é necessário aqui
+  plugins: [react()],
+  // Define a pasta 'client' como a raiz do código-fonte para o Vite
+  root: path.resolve(__dirname, "client"),
   resolve: {
     alias: {
+      // O alias agora funciona corretamente dentro do contexto da raiz 'client'
       "@": path.resolve(__dirname, "client/src"),
     },
   },
-  // Aponta para o index.html dentro da pasta client
-  root: path.resolve(__dirname, "client"),
   build: {
-    // Define a pasta de saída correta para o Netlify
-    outDir: path.resolve(__dirname, "dist/public"),
+    // Gera a pasta de build 'dist' na raiz do projeto, que é o padrão do Netlify
+    outDir: path.resolve(__dirname, "dist"),
     emptyOutDir: true,
     rollupOptions: {
       output: {
