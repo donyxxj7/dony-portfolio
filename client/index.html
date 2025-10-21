@@ -2,28 +2,51 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/webp" href="/logo.webp" />
+    <link rel="apple-touch-icon" href="/logo.webp" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
-    <link rel="icon" type="image/png" href="/logo.png" />
-    <link rel="apple-touch-icon" href="/logo.png" />
-    <meta name="description" content="Dony - Desenvolvedor Full-Stack especializado em React, Node.js e Flutter. Criando soluções digitais completas e inovadoras." />
-    <meta name="keywords" content="desenvolvedor, full-stack, react, nodejs, flutter, web developer, mobile developer" />
+    <noscript
+      ><link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    /></noscript>
+    <link
+      rel="preload"
+      fetchpriority="high"
+      as="image"
+      href="/dony-photo.webp"
+      type="image/webp"
+    />
+
+    <meta
+      name="description"
+      content="Dony - Desenvolvedor Full-Stack especializado em React, Node.js e Flutter. Criando soluções digitais completas e inovadoras."
+    />
+    <meta
+      name="keywords"
+      content="desenvolvedor, full-stack, react, nodejs, flutter, web developer, mobile developer"
+    />
     <meta name="author" content="Dony" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Dony - Full-Stack Developer" />
-    <meta property="og:description" content="Desenvolvedor Full-Stack especializado em React, Node.js e Flutter." />
-    <title>%VITE_APP_TITLE%</title>
+    <meta
+      property="og:description"
+      content="Desenvolvedor Full-Stack especializado em React, Node.js e Flutter."
+    />
+    <title>Dony - Full-Stack Developer</title>
   </head>
 
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <script
-      defer
-      src="%VITE_ANALYTICS_ENDPOINT%/umami"
-      data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"
-    ></script>
   </body>
 </html>

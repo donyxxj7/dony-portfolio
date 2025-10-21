@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Portfolio Banner](./client/public/logo.png)
+![Portfolio Banner](./client/public/logo.webp)
 
 **Desenvolvedor Full-Stack | React • Node.js • Flutter**
 
@@ -57,12 +57,12 @@ Portfólio profissional moderno desenvolvido com as mais recentes tecnologias we
 dony-portfolio-pro/
 ├── client/
 │   ├── public/
-│   │   ├── logo.png              # Logo personalizada
+│   │   ├── logo.webp              # Logo personalizada
 │   │   ├── dony-photo.jpg        # Foto profissional
-│   │   ├── linkhub.png           # Screenshot projeto LinkHub
-│   │   ├── cine-info.png         # Screenshot projeto Cine-Info
-│   │   ├── bagdzunhas.png        # Screenshot projeto Bagdzunhas
-│   │   └── meu-bairro-joinville.png  # Screenshot projeto MBJ
+│   │   ├── linkhub.webp           # Screenshot projeto LinkHub
+│   │   ├── cine-info.webp         # Screenshot projeto Cine-Info
+│   │   ├── bagdzunhas.webp        # Screenshot projeto Bagdzunhas
+│   │   └── meu-bairro-joinville.webp  # Screenshot projeto MBJ
 │   ├── src/
 │   │   ├── components/
 │   │   │   ├── ui/               # Componentes shadcn/ui
@@ -182,7 +182,7 @@ Para atualizar informações pessoais, edite `client/src/pages/Home.tsx`:
 ### Imagens
 
 Substitua as imagens em `client/public/`:
-- `logo.png` - Logo personalizada
+- `logo.webp` - Logo personalizada
 - `dony-photo.jpg` - Foto profissional
 - Screenshots dos projetos
 

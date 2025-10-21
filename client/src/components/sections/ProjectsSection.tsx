@@ -1,4 +1,4 @@
-
+// Salve em: src/components/sections/ProjectsSection.tsx
 
 import { Button } from "@/components/ui/button";
 import {
@@ -24,17 +24,15 @@ export default function ProjectsSection() {
             full-stack, mobile e resolução de problemas complexos do mundo real.
           </p>
         </div>
-
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {/* Projeto 1: Meu Bairro Joinville */}
-          <Card className="group hover:border-primary transition-all duration-300 overflow-hidden">
+          <Card className="group hover:border-primary transition-all duration-300 overflow-hidden flex flex-col">
             <div className="relative h-48 overflow-hidden bg-muted">
               <img
                 src="/mbj.webp"
                 alt="Meu Bairro Joinville"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                width="1280" // IMPORTANTE: Substitua pela largura real da sua imagem
-                height="720" // IMPORTANTE: Substitua pela altura real da sua imagem
+                width="1366"
+                height="655"
                 loading="lazy"
                 decoding="async"
               />
@@ -47,8 +45,8 @@ export default function ProjectsSection() {
                 Plataforma de Gestão Urbana Participativa
               </CardDescription>
             </CardHeader>
-            <CardContent className="space-y-4">
-              <p className="text-sm text-muted-foreground">
+            <CardContent className="flex flex-col flex-grow space-y-4">
+              <p className="text-sm text-muted-foreground flex-grow">
                 Plataforma web full-stack com mapa interativo onde cidadãos
                 podem reportar problemas urbanos com geolocalização, e a gestão
                 pública pode gerenciar solicitações através de um painel de
@@ -60,7 +58,7 @@ export default function ProjectsSection() {
                 <Badge variant="secondary">Node.js</Badge>
                 <Badge variant="secondary">PostgreSQL</Badge>
               </div>
-                          <div className="flex gap-2 pt-2">
+              <div className="flex gap-2 pt-2">
                 <Button size="sm" variant="outline" asChild>
                   <a
                     href="https://meubairrojoinville.com"
@@ -72,7 +70,7 @@ export default function ProjectsSection() {
                 </Button>
                 <Button size="sm" variant="outline" asChild>
                   <a
-                    href="https://github.com/donyxxj7/cine-info"
+                    href="https://github.com/donyxxj7/meu-bairro-joinville"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -82,16 +80,14 @@ export default function ProjectsSection() {
               </div>
             </CardContent>
           </Card>
-
-          {/* Projeto 2: Alerta Inclusivo */}
-          <Card className="group hover:border-primary transition-all duration-300 overflow-hidden">
+          <Card className="group hover:border-primary transition-all duration-300 overflow-hidden flex flex-col">
             <div className="relative h-48 overflow-hidden bg-muted">
               <img
                 src="/alerta.webp"
                 alt="Alerta Inclusivo"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                width="1280" // IMPORTANTE: Substitua pela largura real da sua imagem
-                height="720" // IMPORTANTE: Substitua pela altura real da sua imagem
+                width="411"
+                height="395"
                 loading="lazy"
                 decoding="async"
               />
@@ -102,8 +98,8 @@ export default function ProjectsSection() {
               </CardTitle>
               <CardDescription>App de Emergência Acessível</CardDescription>
             </CardHeader>
-            <CardContent className="space-y-4">
-              <p className="text-sm text-muted-foreground">
+            <CardContent className="flex flex-col flex-grow space-y-4">
+              <p className="text-sm text-muted-foreground flex-grow">
                 Aplicativo móvel em Flutter que permite comunicação de
                 emergência com um toque, enviando mensagem pré-configurada com
                 localização GPS para contatos de confiança. Solução crucial para
@@ -115,7 +111,6 @@ export default function ProjectsSection() {
                 <Badge variant="secondary">Geolocation</Badge>
               </div>
               <div className="flex gap-2 pt-2">
-                
                 <Button size="sm" variant="outline" asChild>
                   <a
                     href="https://github.com/donyxxj7/alerta-inclusivo"
@@ -128,16 +123,14 @@ export default function ProjectsSection() {
               </div>
             </CardContent>
           </Card>
-
-          {/* Projeto 3: LinkHub */}
-          <Card className="group hover:border-primary transition-all duration-300 overflow-hidden">
+          <Card className="group hover:border-primary transition-all duration-300 overflow-hidden flex flex-col">
             <div className="relative h-48 overflow-hidden bg-muted">
               <img
                 src="/LinkHub.webp"
                 alt="LinkHub"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                width="1919" // IMPORTANTE: Substitua pela largura real da sua imagem
-                height="942" // IMPORTANTE: Substitua pela altura real da sua imagem
+                width="1919"
+                height="942"
                 loading="lazy"
                 decoding="async"
               />
@@ -150,8 +143,8 @@ export default function ProjectsSection() {
                 Agregador de Links Personalizado
               </CardDescription>
             </CardHeader>
-            <CardContent className="space-y-4">
-              <p className="text-sm text-muted-foreground">
+            <CardContent className="flex flex-col flex-grow space-y-4">
+              <p className="text-sm text-muted-foreground flex-grow">
                 Aplicação full-stack completa, inspirada no Linktree, que
                 permite criar e gerenciar uma página de links personalizada.
                 Construído do zero com back-end em Node.js/Express, banco de
@@ -185,16 +178,14 @@ export default function ProjectsSection() {
               </div>
             </CardContent>
           </Card>
-
-          {/* Projeto 4: Cine-Info */}
-          <Card className="group hover:border-primary transition-all duration-300 overflow-hidden">
+          <Card className="group hover:border-primary transition-all duration-300 overflow-hidden flex flex-col">
             <div className="relative h-48 overflow-hidden bg-muted">
               <img
                 src="/cine-info.webp"
                 alt="Cine-Info"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                width="1920" // IMPORTANTE: Substitua pela largura real da sua imagem
-                height="1080" // IMPORTANTE: Substitua pela altura real da sua imagem
+                width="1920"
+                height="1080"
                 loading="lazy"
                 decoding="async"
               />
@@ -205,8 +196,8 @@ export default function ProjectsSection() {
               </CardTitle>
               <CardDescription>Buscador de Filmes Interativo</CardDescription>
             </CardHeader>
-            <CardContent className="space-y-4">
-              <p className="text-sm text-muted-foreground">
+            <CardContent className="flex flex-col flex-grow space-y-4">
+              <p className="text-sm text-muted-foreground flex-grow">
                 Aplicação web interativa que consome a API do TMDB para permitir
                 que usuários descubram, pesquisem e vejam detalhes sobre filmes.
                 Auditado com notas excelentes no Lighthouse (90+ em Performance
@@ -239,16 +230,14 @@ export default function ProjectsSection() {
               </div>
             </CardContent>
           </Card>
-
-          {/* Projeto 5: Bagdzunhas */}
-          <Card className="group hover:border-primary transition-all duration-300 overflow-hidden">
+          <Card className="group hover:border-primary transition-all duration-300 overflow-hidden flex flex-col">
             <div className="relative h-48 overflow-hidden bg-muted">
               <img
                 src="/bagdzunhas.webp"
                 alt="Bagdzunhas"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                width="1920" // IMPORTANTE: Substitua pela largura real da sua imagem
-                height="943" // IMPORTANTE: Substitua pela altura real da sua imagem
+                width="1920"
+                height="943"
                 loading="lazy"
                 decoding="async"
               />
@@ -259,8 +248,8 @@ export default function ProjectsSection() {
               </CardTitle>
               <CardDescription>Portfólio Digital Profissional</CardDescription>
             </CardHeader>
-            <CardContent className="space-y-4">
-              <p className="text-sm text-muted-foreground">
+            <CardContent className="flex flex-col flex-grow space-y-4">
+              <p className="text-sm text-muted-foreground flex-grow">
                 Portfólio digital elegante para profissional autônoma, focado em
                 exibir trabalhos e capturar clientes através de formulários com
                 integração ao WhatsApp. Design focado na identidade da cliente.

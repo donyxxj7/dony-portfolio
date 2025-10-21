@@ -47,7 +47,7 @@ export default function Navbar() {
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
           >
-            <img src="/logo.png" alt="Dony Logo" className="h-10 w-10" />
+            <img src="/logo.webp" alt="Dony Logo" className="h-10 w-10" />
             <span className="text-2xl font-bold gradient-text">Dony</span>
           </a>
 

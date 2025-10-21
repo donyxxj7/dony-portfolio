@@ -1,3 +1,4 @@
+// Cole este código completo em: vite.config.ts
 
 import { jsxLocPlugin } from "@builder.io/vite-plugin-jsx-loc";
 import tailwindcss from "@tailwindcss/vite";
@@ -28,6 +29,7 @@ export default defineConfig({
   build: {
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
+    // --- CÓDIGO ADICIONADO PARA OTIMIZAÇÃO ---
     rollupOptions: {
       output: {
         manualChunks(id) {
