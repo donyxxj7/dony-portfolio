@@ -1,34 +1,23 @@
-// Cole este código completo em: vite.config.ts
+// Cole este código final em: vite.config.ts
 
-import { jsxLocPlugin } from "@builder.io/vite-plugin-jsx-loc";
-import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 import { defineConfig } from "vite";
-import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
-
-const plugins = [
-  react(),
-  tailwindcss(),
-  jsxLocPlugin(),
-  vitePluginManusRuntime(),
-];
 
 export default defineConfig({
-  plugins,
+  plugins: [react()], // Apenas o plugin do React é necessário aqui
   resolve: {
     alias: {
-      "@": path.resolve(import.meta.dirname, "client/src"),
+      "@": path.resolve(__dirname, "client/src"),
     },
   },
-  envDir: path.resolve(import.meta.dirname),
+  // Aponta para o index.html dentro da pasta client
+  root: path.resolve(__dirname, "client"),
   build: {
-    outDir: path.resolve(import.meta.dirname, "dist/public"),
+    // Define a pasta de saída correta para o Netlify
+    outDir: path.resolve(__dirname, "dist/public"),
     emptyOutDir: true,
     rollupOptions: {
-      input: {
-        main: path.resolve(import.meta.dirname, "client/index.html"),
-      },
       output: {
         manualChunks(id) {
           if (id.includes("node_modules")) {
@@ -44,7 +33,5 @@ export default defineConfig({
   },
   server: {
     port: 3000,
-    strictPort: false,
-    host: true,
   },
 });
