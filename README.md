@@ -1,88 +1,186 @@
-# Portfólio — Endony Paradela
+<div align="center">
 
-Portfólio pessoal de Endony Paradela, desenvolvido para apresentar projetos de software como produtos completos: do problema e da experiência de uso até backend, dados, integrações e deploy.
+# Endony Paradela — Portfolio
 
-![Preview social do portfólio de Endony Paradela](./public/og-image-1200x630.png)
+**Software developer building digital products from concept to deployment.**
 
-## Stack
+A product-focused portfolio featuring real projects across frontend, backend, data, integrations and deployment.
 
-- Next.js 16 com App Router
-- React 19
-- TypeScript
-- Tailwind CSS 4
-- Lucide React
+[Portfolio](https://donydev.netlify.app/) · [LinkedIn](https://www.linkedin.com/in/donyzete/) · [GitHub](https://github.com/donyxxj7)
 
-## Rodando localmente
+<br />
 
-Requisitos:
+![Endony Paradela portfolio preview](./public/og-image-1200x630.png)
 
-- Node.js 20 ou superior
+</div>
+
+---
+
+## About this project
+
+This repository contains my personal portfolio, rebuilt to present software projects as **products**, not just as technology showcases.
+
+The experience is designed around the work itself: what problem each project addresses, how the solution was structured, what I was responsible for and which technologies supported the implementation.
+
+The current version prioritizes:
+
+- a clean, editorial interface;
+- real project context instead of generic skill ratings;
+- responsive and accessible UI;
+- centralized portfolio data for easier maintenance;
+- SEO and social sharing metadata;
+- a lightweight production setup.
+
+## Featured work
+
+| Project | Focus | Main stack |
+| --- | --- | --- |
+| **Meu Bairro Joinville** | Civic technology platform for reporting and visualizing urban issues | Next.js, Express, PostgreSQL, Cloudinary |
+| **SweetFlow** | Operational workflow and team demand management | React, TypeScript, Fastify, Neon, Drizzle |
+| **Furduncinho047** | Ticket sales, management and validation for automotive events | React, Express, tRPC, Drizzle |
+| **Água Pura Joinville** | Commercial web experience for a local business | Next.js, TypeScript, Tailwind CSS |
+
+More projects and project metadata live in `data/portfolio.ts`.
+
+## Tech stack
+
+**Core**
+
+`Next.js 16` · `React 19` · `TypeScript` · `Tailwind CSS 4`
+
+**Interface**
+
+Responsive UI · semantic HTML · accessibility-focused interactions · Lucide React
+
+**Quality**
+
+TypeScript type checking · ESLint · Next.js production build
+
+**Delivery**
+
+Netlify · GitHub · environment-based site URL configuration
+
+## Architecture
+
+```text
+.
+├── app/                    # App Router, layout, metadata and global styles
+├── components/             # Shared interface components
+│   └── sections/           # Home page sections
+├── data/
+│   └── portfolio.ts        # Projects, stack and social links
+├── lib/
+│   └── site.ts             # Site URL and shared description
+├── public/
+│   ├── projects/           # Project artwork and screenshots
+│   └── og-image-1200x630.png
+├── netlify.toml
+└── package.json
+```
+
+One of the main goals of this structure is keeping content separate from presentation. Projects, links and stack information can be updated centrally without rewriting the UI components.
+
+## Running locally
+
+### Requirements
+
+- Node.js 20+
 - npm
 
-Instale as dependências:
+Clone the repository and install dependencies:
 
 ```bash
+git clone https://github.com/donyxxj7/dony-portfolio.git
+cd dony-portfolio
 npm install
 ```
 
-Crie o arquivo de ambiente:
+Create your local environment file:
 
-```bash
+**Windows PowerShell**
+
+```powershell
 Copy-Item .env.example .env.local
 ```
 
-Atualize `NEXT_PUBLIC_SITE_URL` com a URL local ou pública desejada e inicie o projeto:
+**macOS / Linux**
+
+```bash
+cp .env.example .env.local
+```
+
+Set `NEXT_PUBLIC_SITE_URL` and start the development server:
 
 ```bash
 npm run dev
 ```
 
-O site ficará disponível em [http://localhost:3000](http://localhost:3000).
+Then open:
 
-## Qualidade e build
+```text
+http://localhost:3000
+```
+
+## Available scripts
+
+| Command | Purpose |
+| --- | --- |
+| `npm run dev` | Starts the Next.js development server |
+| `npm run check` | Runs TypeScript checks and ESLint |
+| `npm run build` | Creates the production build |
+| `npm run start` | Runs the production server |
+
+Before shipping changes, the recommended validation flow is:
 
 ```bash
 npm run check
 npm run build
 ```
 
-O comando `check` executa a verificação de tipos e o ESLint. O build usa o fluxo padrão do Next.js e gera a Home de forma estática.
+## SEO & social sharing
 
-## Estrutura
+The portfolio includes:
 
-```text
-app/                  página, layout, estilos e arquivos especiais de SEO
-components/           componentes compartilhados
-components/sections/  seções editoriais da Home
-data/portfolio.ts     projetos, stack e links em uma fonte central
-lib/site.ts           URL e descrição base do site
-public/projects/      imagens reais ou marcas dos projetos apresentados
-public/og-image-1200x630.png   imagem de compartilhamento social
+- canonical metadata;
+- Open Graph metadata;
+- Twitter/X large-image cards;
+- a 1200×630 social preview;
+- favicon;
+- `robots.txt`;
+- `sitemap.xml`;
+- `Person` structured data.
+
+The production environment should define:
+
+```env
+NEXT_PUBLIC_SITE_URL=https://your-domain.com
 ```
 
-## Conteúdo
+This keeps canonical URLs, social previews, robots and sitemap aligned with the deployed domain.
 
-Os projetos e links ficam centralizados em `data/portfolio.ts`. Para adicionar ou atualizar um projeto, edite esse arquivo sem precisar alterar os componentes de apresentação.
+## Deployment
 
-O site não publica métricas, depoimentos ou experiências profissionais não verificadas. Links de demonstração só devem ser adicionados quando estiverem ativos.
+The project is prepared for **Netlify**.
 
-## SEO e compartilhamento
+`netlify.toml` currently defines:
 
-O projeto inclui:
+- `npm run build` as the build command;
+- Node.js 20 as the runtime.
 
-- metadata do Next.js para title, description, canonical, Open Graph e Twitter/X;
-- preview social em `public/og-image-1200x630.png`;
-- favicon próprio em `app/icon.svg`;
-- `robots.txt` e `sitemap.xml` gerados pelas convenções do App Router;
-- dados estruturados do tipo `Person`.
+Set `NEXT_PUBLIC_SITE_URL` in the Netlify environment variables before deploying to production.
 
-Defina `NEXT_PUBLIC_SITE_URL` no ambiente de produção para que canonical, Open Graph, robots e sitemap usem o domínio correto.
+## Content principles
 
-## Deploy no Netlify
+The portfolio intentionally avoids unverified claims.
 
-O arquivo `netlify.toml` define:
+Project descriptions should only include technologies, responsibilities, links, metrics and results that can be supported by the actual project. Inactive demo links should not be published as working deployments.
 
-- build command: `npm run build`;
-- runtime Node.js 20.
+---
 
-No Netlify, configure a variável `NEXT_PUBLIC_SITE_URL` com o domínio final do site. O framework é detectado automaticamente; não é necessário criar redirect de SPA para este projeto Next.js.
+<div align="center">
+
+Built and maintained by **Endony Paradela (Dony)**.
+
+[View portfolio](https://donydev.netlify.app/) · [LinkedIn](https://www.linkedin.com/in/donyzete/) · [GitHub](https://github.com/donyxxj7)
+
+</div>
